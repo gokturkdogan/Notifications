@@ -1,0 +1,104 @@
+.notificationDropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.notificationDropdown i {
+  cursor: pointer;
+}
+.notificationDropdown .dropdown-content {
+  display: none;
+  background-color: #D5ECDA;
+}
+.notificationDropdown .dropdown-content .notification {
+  margin-top: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  width: 300px;
+  border-radius: 10px;
+}
+.notificationDropdown .dropdown-content .notification__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-bottom: 1px solid #edf2f1;
+}
+.notificationDropdown .dropdown-content .notification__header h5 {
+  margin-top: 0;
+}
+.notificationDropdown .dropdown-content .notification__header i {
+  cursor: pointer;
+}
+.notificationDropdown .dropdown-content .notification__body {
+  display: flex;
+  flex-direction: column;
+}
+.notificationDropdown .dropdown-content .notification__item {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #edf2f1;
+  padding-left: 15px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.notificationDropdown .dropdown-content .notification__item p {
+  font-size: 0.7rem;
+  color: #B6C1BD;
+}
+.notificationDropdown .dropdown-content .notification__item p strong {
+  color: #000;
+}
+.notificationDropdown .dropdown-content .notification__image img {
+  width: 45px;
+  height: 45px;
+  border-radius: 55px;
+  margin-right: 10px;
+}
+.notificationDropdown .dropdown-content .notification__footer {
+  display: flex;
+  justify-content: center;
+  color: #38B118;
+}
+.notificationDropdown .-show {
+  display: block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+}
+
+.openLeft {
+  background-color: red;
+  color: #FFF;
+  padding: 7px 9px;
+  border-radius: 100px;
+  font-size: 10px;
+}
+
+.openRight {
+  background-color: green;
+}
+
+.notRight {
+  color: green;
+}
+
+.notLeft {
+  color: #C0C8C8;
+}
+
+body {
+  background-color: #D5ECDA;
+  font-family: "Ubuntu";
+}
+body .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 160px 560px;
+}/*# sourceMappingURL=main.css.map */
