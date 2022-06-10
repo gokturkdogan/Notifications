@@ -1,22 +1,26 @@
-.notificationDropdown {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .notificationDropdown i {
   cursor: pointer;
 }
 .notificationDropdown .dropdown-content {
   display: none;
+  transform: translate(-45%, 0) !important;
   background-color: #D5ECDA;
 }
 .notificationDropdown .dropdown-content .notification {
-  margin-top: 15px;
+  margin-top: 25px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   width: 300px;
   border-radius: 10px;
+}
+.notificationDropdown .dropdown-content .notification::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 139px;
+  z-index: 1;
+  border: solid 15px transparent;
+  border-bottom-color: #FFF;
 }
 .notificationDropdown .dropdown-content .notification__header {
   display: flex;
@@ -45,6 +49,7 @@
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .notificationDropdown .dropdown-content .notification__item p {
   font-size: 0.7rem;
@@ -52,6 +57,9 @@
 }
 .notificationDropdown .dropdown-content .notification__item p strong {
   color: #000;
+}
+.notificationDropdown .dropdown-content .notification__item:hover {
+  background-color: #f3f7f4;
 }
 .notificationDropdown .dropdown-content .notification__image img {
   width: 45px;
@@ -63,6 +71,9 @@
   display: flex;
   justify-content: center;
   color: #38B118;
+}
+.notificationDropdown .dropdown-content .notification__footer h5 {
+  cursor: pointer;
 }
 .notificationDropdown .-show {
   display: block;
@@ -83,6 +94,10 @@
 
 .openRight {
   background-color: green;
+  color: #FFF;
+  padding: 7px 7px;
+  border-radius: 100px;
+  font-size: 10px;
 }
 
 .notRight {
@@ -101,4 +116,5 @@ body .container {
   display: flex;
   justify-content: space-between;
   margin: 160px 560px;
+  width: 500px;
 }/*# sourceMappingURL=main.css.map */
