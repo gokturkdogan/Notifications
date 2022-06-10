@@ -1,10 +1,4 @@
-.openLeft{
-    background-color: red;
-    color: #FFF;
-    padding: 7px 9px;
-    border-radius: 100px;
-    font-size: 10px;
-}
+//messages
 .openRight{
     background-color: green;
     color: #FFF;
@@ -12,11 +6,31 @@
     border-radius: 100px;
     font-size: 10px;
 }
-
-.notRight{
-    color: green;
+.messRight{
+    color: #C0C8C8;
+}
+.messLeft{
+    color: $notfooter;
+}
+.messFooterL{
+    color: #C0C8C8;
+}
+.messFooterR{
+    color: $notfooter;
 }
 
+
+//notifications
+.openLeft{
+    background-color: $notopen;
+    color: #FFF;
+    padding: 7px 9px;
+    border-radius: 100px;
+    font-size: 10px;
+}
+.notRight{
+    color: $notfooter;
+}
 .notLeft{
     color: #C0C8C8;
 }

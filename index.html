@@ -1,74 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Lato:wght@300&family=Nunito:wght@300;400&family=Roboto:wght@100;300&family=Ubuntu:wght@300;400;700&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/59fe93ed09.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="assets/scss/main.css">
-    <title>Notifications</title>
-</head>
-<body>
-    <div class="container">
-        <div class="notificationDropdown">
-            <button onclick="myNotificationFunction()" class="dropbtn"><i class="fa-solid fa-8 openLeft"></i></button>
-            <div id="myNotificationDropdown" class="dropdown-content">
-              <div class="notification">
-                  <header class="notification__header">
-                    <i class="fa-solid fa-bell notRight"></i>
-                    <h5>Notifications</h5>
-                    <i class="fa-solid fa-gear notLeft"></i>
-                  </header>
-                  <div class="notification__body">
-                      <div class="notification__item">
-                          <div class="notification__image">
-                              <img src="assets/images/default-person.jpg">
-                          </div>
-                          <div class="notification__content">
-                            <p><strong>Danny Milles</strong> Commented on your photo</p>
-                          </div>
-                      </div>
-                      <div class="notification__item">
-                          <div class="notification__image">
-                            <img src="assets/images/default-person.jpg">
-                          </div>
-                          <div class="notification__content">
-                            <p><strong>Elly Woodworth</strong> Posted a photo on your wall</p>
-                          </div>
-                    </div>
-                    <div class="notification__item">
-                        <div class="notification__image">
-                            <img src="assets/images/default-person.jpg">
-                        </div>
-                        <div class="notification__content">
-                            <p><strong>Kate Stockton</strong> Just mentioned you in her new post</p>
-                        </div>
-                    </div>
 
-                  </div>
-                  <footer class="notification__footer">
-                    <h5>See all activity</h5>
-                  </footer>
-                  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Lato:wght@300&family=Nunito:wght@300;400&family=Roboto:wght@100;300&family=Ubuntu:wght@300;400;700&family=Zen+Maru+Gothic:wght@300&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/59fe93ed09.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="assets/scss/main.css">
+  <title>Notifications</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="notificationDropdown">
+      <button onclick="myNotificationFunction()" class="dropbtn"><i class="fa-solid fa-8 openLeft"></i></button>
+      <div id="myNotificationDropdown" class="dropdown-content">
+        <div class="notification">
+          <header class="notification__header">
+            <i class="fa-solid fa-bell notRight"></i>
+            <h5>Notifications</h5>
+            <i class="fa-solid fa-gear notLeft"></i>
+          </header>
+          <div class="notification__body">
+            <div class="notification__item">
+              <div class="notification__image">
+                <img src="assets/images/default-person.jpg">
+              </div>
+              <div class="notification__content">
+                <p><strong>Danny Milles</strong> Commented on your photo</p>
               </div>
             </div>
-          </div>
-          <div class="messageDropdown">
-            <button onclick="myMessageFunction()" class="dropbtn"><i class="fa-solid fa-envelope openRight"></i></button>
-            <div id="myMessageDropdown" class="dropdown-content">
-              <div class="messages">
-                <header class="messages__header">
-                  
-                </header>
+            <div class="notification__item">
+              <div class="notification__image">
+                <img src="assets/images/default-person.jpg">
+              </div>
+              <div class="notification__content">
+                <p><strong>Elly Woodworth</strong> Posted a photo on your wall</p>
               </div>
             </div>
+            <div class="notification__item">
+              <div class="notification__image">
+                <img src="assets/images/default-person.jpg">
+              </div>
+              <div class="notification__content">
+                <p><strong>Kate Stockton</strong> Just mentioned you in her new post</p>
+              </div>
+            </div>
+
           </div>
+          <footer class="notification__footer">
+            <h5>See all activity</h5>
+          </footer>
+
+        </div>
+      </div>
     </div>
-    <script src="assets/js/message.js"></script>
-    <script src="assets/js/notification.js"></script>
+    <div class="messageDropdown">
+      <button onclick="myMessageFunction()" class="dropbtn"><i class="fa-solid fa-envelope openRight"></i></button>
+      <div id="myMessageDropdown" class="dropdown-content">
+        <div class="messages">
+          <header class="messages__header">
+            <i class="fa-regular fa-message messLeft"></i>
+            <h5>Messages</h5>
+            <i class="fa-solid fa-ellipsis-vertical messRight"></i>
+          </header>
+          <div class="messages__body">
+            <div class="messages__get">
+              <div class="messages__getter">
+                <img src="assets/images/default-person.jpg" alt="">
+              </div>
+              <div class="messages__getContent">
+                <div class="messages__getText">
+                  <p>Hey! Need to talk to you urgent, are you free?</p>
+                  <span>10:53</span>
+                </div>
+                <div class="messages__getText">
+                  <p>Hello, are you there?</p>
+                  <span>10:54</span>
+                </div>
+              </div>
+            </div>
+            <div class="messages__send">
+              <div class="messages__sender">
+                <img src="assets/images/default-person.jpg" alt="">
+              </div>
+              <div class="messages__sendContent">
+                <div class="messages__sendText">
+                  <span>11:15</span>
+                  <p>Hmm, Can't focus...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="messages__footer">
+            <i class="fa-solid fa-circle-plus messFooterL"></i>
+            <input type="text" placeholder="Type your message here...">
+            <i class="fa-solid fa-arrow-right messFooterR"></i>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/message.js"></script>
+  <script src="assets/js/notification.js"></script>
 </body>
+
 </html>

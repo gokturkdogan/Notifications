@@ -1,0 +1,153 @@
+.messageDropdown {
+    i {
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        transform: translate(-45%, 0) !important;
+        background-color: $main;
+        display: none;
+
+        .messages {
+            margin-top: 25px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            background-color: $messbg;
+            width: 300px;
+            border-radius: 10px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 139px;
+                z-index: 1;
+                border: solid 15px transparent;
+                border-bottom-color: #FFF;
+            }
+
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 25px;
+                padding-bottom: 0;
+                padding-left: 25px;
+                padding-right: 25px;
+                border-bottom: 1px solid $notborder;
+
+                h5 {
+                    margin-top: 0;
+                }
+
+                i {
+                    cursor: pointer;
+                }
+            }
+
+            &__body {
+                display: flex;
+                flex-direction: column;
+                padding-top: 30px;
+            }
+
+            &__get {
+                display: flex;
+                padding: 0 10px;
+            }
+
+            &__getter {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 55px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                }
+            }
+
+            &__getContent {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__getText {
+                display: flex;
+
+                p {
+                    font-size: 0.7rem;
+                    border: 1px solid $pborder;
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    line-height: 18px;
+                    width: fit-content;
+                }
+
+                span {
+                    font-size: 0.6rem;
+                    color: $notfont;
+                    margin-top: 30px;
+                    margin-left: 10px;
+                }
+            }
+
+            &__send {
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 0 10px;
+            }
+
+            &__sender {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 55px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                }
+            }
+
+            &__sendContent {}
+
+            &__sendText {
+                display: flex;
+
+                span {
+                    font-size: 0.6rem;
+                    color: $notfont;
+                    margin-top: 30px;
+                    margin-right: 10px;
+                }
+
+                p {
+                    font-size: 0.7rem;
+                    background-color: $pbg;
+                    border-radius: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    line-height: 18px;
+                    width: fit-content;
+                    margin-right: 7px;
+                }
+            }
+
+            &__footer {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                border-top: 1px solid $notborder;
+
+                input {
+                    border: none;
+                    outline: none;
+                }
+            }
+
+        }
+    }
+    .-show {
+        display: block;
+    }
+}

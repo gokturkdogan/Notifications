@@ -1,5 +1,6 @@
 @import 'variables/colors';
 @import 'layout/notifications';
+@import 'layout/messages';
 @import 'components/buttons';
 @import 'components/icons';
 body{
@@ -8,7 +9,7 @@ font-family: 'Ubuntu';
 .container{
     display: flex;
     justify-content: space-between;
-    margin: 160px 560px;
-    width: 500px;
+    margin: 160px 410px;
+    width: 800px;
 }
 }
