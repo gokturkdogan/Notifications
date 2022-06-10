@@ -1,3 +1,7 @@
+.notificationDropdown {
+  float: left;
+  position: absolute;
+}
 .notificationDropdown i {
   cursor: pointer;
 }
@@ -79,10 +83,17 @@
   display: block;
 }
 
+.messageDropdown {
+  float: left;
+  position: absolute;
+  right: 700px;
+}
 .messageDropdown i {
   cursor: pointer;
 }
 .messageDropdown .dropdown-content {
+  position: absolute;
+  right: -263px;
   transform: translate(-45%, 0) !important;
   background-color: #D5ECDA;
   display: none;
@@ -97,7 +108,7 @@
 .messageDropdown .dropdown-content .messages::before {
   content: "";
   position: absolute;
-  top: -30px;
+  top: -5px;
   left: 139px;
   z-index: 1;
   border: solid 15px transparent;
@@ -259,8 +270,6 @@ body {
   font-family: "Ubuntu";
 }
 body .container {
-  display: flex;
-  justify-content: space-between;
   margin: 160px 410px;
   width: 800px;
 }/*# sourceMappingURL=main.css.map */

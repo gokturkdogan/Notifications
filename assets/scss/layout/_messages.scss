@@ -1,9 +1,14 @@
 .messageDropdown {
+    float: left;
+    position: absolute;
+    right: 700px;
     i {
         cursor: pointer;
     }
 
     .dropdown-content {
+        position: absolute;
+        right: -263px;
         transform: translate(-45%, 0) !important;
         background-color: $main;
         display: none;
@@ -18,7 +23,7 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: -30px;
+                top: -5px;
                 left: 139px;
                 z-index: 1;
                 border: solid 15px transparent;
