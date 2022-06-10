@@ -7,7 +7,7 @@
         display: none;
         transform: translate(-45%, 0) !important;
         background-color: $main;
-        
+
 
         .notification {
             margin-top: 25px;
@@ -15,6 +15,7 @@
             background-color: $notbg;
             width: 300px;
             border-radius: 10px;
+
             &::before {
                 content: "";
                 position: absolute;
